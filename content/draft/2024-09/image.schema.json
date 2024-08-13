@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/content/draft/2024-09/image.schema.json",
+    "title": "Image",
+    "description": "https://schema.org/ImageObject",
+    "type": "object",
+    "required": [
+        "contentUrl"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "contentUrl": {
+            "type": "string"
+        },
+        "datePublished": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "author": {
+            "type": "string"
+        },
+        "contentLocation": {
+            "type": "string"
+        }
+    }
+}

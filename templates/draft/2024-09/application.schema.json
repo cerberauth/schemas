@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/templates/draft/2024-09/application.schema.json",
+    "title": "Application",
+    "description": "",
+    "type": "object",
+    "required": [
+        "name",
+        "identifier"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "identifier": {
+            "type": "string"
+        },
+        "icon": {
+            "$ref": "hhttps://schemas.cerberauth.com/content/draft/2024-09/image.schema.json"
+        },
+        "example": {
+            "$ref": "https://schemas.cerberauth.com/templates/draft/2024-09/example.schema.json"
+        }
+    }
+}

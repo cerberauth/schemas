@@ -1,0 +1,86 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/templates/draft/2024-09/client.schema.json",
+    "title": "Client Template",
+    "description": "",
+    "type": "object",
+    "required": [
+        "grantType",
+        "tokenEndpointAuthMethod",
+        "name"
+    ],
+    "properties": {
+        "grantType": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "authorization_code",
+                    "pkce",
+                    "refresh_token",
+                    "client_credentials",
+                    "implicit",
+                    "hybrid",
+                    "urn:ietf:params:oauth:grant-type:jwt-bearer",
+                    "urn:ietf:params:oauth:grant-type:device_code"
+                ]
+            }
+        },
+        "tokenEndpointAuthMethod": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "none",
+                    "client_secret_post",
+                    "client_secret_basic",
+                    "client_secret_jwt",
+                    "private_key_jwt",
+                    "tls_client_auth",
+                    "self_signed_tls_client_auth"
+                ]
+            }
+        },
+        "name": {
+            "type": "string"
+        },
+        "scopes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "responseTypes": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "code",
+                    "token",
+                    "id_token"
+                ]
+            }
+        },
+        "idTokenSignedResponseAlg": {
+            "type": "string",
+            "enum": [
+                "RS256",
+                "RS384",
+                "RS512",
+                "ES256",
+                "ES384",
+                "ES512",
+                "HS256",
+                "HS384",
+                "HS512"
+            ]
+        },
+        "subjectType": {
+            "type": "string",
+            "enum": [
+                "public",
+                "pairwise"
+            ]
+        }
+    }
+}

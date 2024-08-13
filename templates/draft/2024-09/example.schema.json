@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/templates/draft/2024-09/example.schema.json",
+    "title": "Example",
+    "description": "",
+    "type": "object",
+    "required": [
+        "name",
+        "repository"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the application"
+        },
+        "repository": {
+            "type": "object",
+            "description": "Information about the source code repository",
+            "required": [
+                "url"
+            ],
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The URL of the repository"
+                }
+            }
+        }
+    }
+}
