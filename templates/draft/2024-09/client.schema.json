@@ -5,12 +5,12 @@
     "description": "",
     "type": "object",
     "required": [
-        "grantType",
-        "tokenEndpointAuthMethod",
+        "grantTypes",
+        "tokenEndpointAuthMethods",
         "name"
     ],
     "properties": {
-        "grantType": {
+        "grantTypes": {
             "type": "array",
             "items": {
                 "type": "string",
@@ -26,7 +26,7 @@
                 ]
             }
         },
-        "tokenEndpointAuthMethod": {
+        "tokenEndpointAuthMethods": {
             "type": "array",
             "items": {
                 "type": "string",
@@ -40,9 +40,6 @@
                     "self_signed_tls_client_auth"
                 ]
             }
-        },
-        "name": {
-            "type": "string"
         },
         "scopes": {
             "type": "array",
@@ -61,26 +58,41 @@
                 ]
             }
         },
-        "idTokenSignedResponseAlg": {
-            "type": "string",
-            "enum": [
-                "RS256",
-                "RS384",
-                "RS512",
-                "ES256",
-                "ES384",
-                "ES512",
-                "HS256",
-                "HS384",
-                "HS512"
-            ]
+        "idTokenSignedResponseAlgorithms": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "HS256",
+                    "HS384",
+                    "HS512",
+                    "RS256",
+                    "RS384",
+                    "RS512",
+                    "ES256",
+                    "ES384",
+                    "ES512",
+                    "PS256",
+                    "PS384",
+                    "PS512"
+                ]
+            }
         },
-        "subjectType": {
-            "type": "string",
-            "enum": [
-                "public",
-                "pairwise"
-            ]
+        "subjectTypes": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "public",
+                    "pairwise"
+                ]
+            }
+        },
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
         }
     }
 }
