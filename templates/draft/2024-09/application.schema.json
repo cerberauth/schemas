@@ -19,7 +19,10 @@
             "type": "string"
         },
         "icon": {
-            "$ref": "hhttps://schemas.cerberauth.com/content/draft/2024-09/image.schema.json"
+            "$ref": "https://schemas.cerberauth.com/content/draft/2024-09/image.schema.json"
+        },
+        "client": {
+            "$ref": "https://schemas.cerberauth.com/templates/draft/2024-09/client.schema.json"
         },
         "example": {
             "$ref": "https://schemas.cerberauth.com/templates/draft/2024-09/example.schema.json"

@@ -6,8 +6,7 @@
     "type": "object",
     "required": [
         "grantTypes",
-        "tokenEndpointAuthMethods",
-        "name"
+        "tokenEndpointAuthMethods"
     ],
     "properties": {
         "grantTypes": {
@@ -87,12 +86,6 @@
                     "pairwise"
                 ]
             }
-        },
-        "name": {
-            "type": "string"
-        },
-        "description": {
-            "type": "string"
         }
     }
 }
