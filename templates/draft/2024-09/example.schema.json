@@ -13,6 +13,11 @@
             "type": "string",
             "description": "The name of the application"
         },
+        "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "The URL of the example application"
+        },
         "repository": {
             "type": "object",
             "description": "Information about the source code repository",
