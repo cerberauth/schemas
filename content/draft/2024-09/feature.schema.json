@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/content/draft/2024-09/feature.schema.json",
+    "title": "Feature",
+    "description": "",
+    "type": "object",
+    "required": [
+        "identifier",
+        "status"
+    ],
+    "properties": {
+        "identifier": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "supported",
+                "not_supported",
+                "deprecated",
+                "planned",
+                "partial"
+            ]
+        },
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string",
+            "format": "uri"
+        }
+    }
+}

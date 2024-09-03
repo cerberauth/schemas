@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/content/draft/2024-09/features.schema.json",
+    "title": "Features",
+    "description": "",
+    "type": "object",
+    "required": [
+        "name",
+        "featureList"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "featureList": {
+            "type": "array",
+            "items": {
+                "$ref": "https://schemas.cerberauth.com/content/draft/2024-09/feature.schema.json"
+            }
+        }
+    }
+}
