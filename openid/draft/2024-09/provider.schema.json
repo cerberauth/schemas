@@ -19,6 +19,14 @@
         "identifier": {
             "type": "string"
         },
+        "website": {
+            "type": "string",
+            "format": "uri"
+        },
+        "github": {
+            "type": "string",
+            "format": "uri"
+        },
         "icon": {
             "$ref": "https://schemas.cerberauth.com/content/draft/2024-09/image.schema.json"
         },
