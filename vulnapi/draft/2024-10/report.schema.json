@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/vulnapi/report/draft/2024-10/report.schema.json",
+    "title": "Report",
+    "description": "",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": [
+            "id",
+            "name",
+            "startTime",
+            "operation",
+            "scans",
+            "vulnerabilities"
+        ],
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "name": {
+                "type": "string"
+            },
+            "startTime": {
+                "type": "string",
+                "format": "date-time"
+            },
+            "endTime": {
+                "type": "string",
+                "format": "date-time"
+            },
+            "operation": {
+                "$ref": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/operation.schema.json"
+            },
+            "data": {
+                "type": "object"
+            },
+            "scans": {
+                "type": "array",
+                "items": {
+                    "$ref": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/scan.schema.json"
+                }
+            },
+            "vulnerabilities": {
+                "type": "array",
+                "items": {
+                    "$ref": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/vulnerability.schema.json"
+                }
+            }
+        }
+    }
+}

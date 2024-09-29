@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/operation.schema.json",
+    "title": "Report Operation",
+    "description": "",
+    "type": "object",
+    "required": [
+        "id",
+        "tags",
+        "method",
+        "url",
+        "securitySchemes"
+    ],
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "method": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "body": {
+            "type": "object"
+        },
+        "cookies": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "headers": {
+            "type": "object"
+        },
+        "securitySchemes": {
+            "type": "array",
+            "items": {
+                "$ref": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/security-scheme.schema.json"
+            }
+        }
+    }
+}

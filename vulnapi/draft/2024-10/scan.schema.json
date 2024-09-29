@@ -1,0 +1,64 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/scan.schema.json",
+    "title": "Report Scan",
+    "description": "",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "request": {
+            "type": "object",
+            "required": [
+                "method",
+                "url"
+            ],
+            "properties": {
+                "method": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "body": {
+                    "type": "string"
+                },
+                "cookies": {
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    }
+                },
+                "headers": {
+                    "type": "object"
+                }
+            }
+        },
+        "response": {
+            "type": "object",
+            "required": [
+                "statusCode"
+            ],
+            "properties": {
+                "statusCode": {
+                    "type": "number"
+                },
+                "body": {
+                    "type": "string"
+                },
+                "cookies": {
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    }
+                },
+                "headers": {
+                    "type": "object"
+                }
+            }
+        },
+        "error": {
+            "type": "object",
+            "required": []
+        }
+    }
+}
