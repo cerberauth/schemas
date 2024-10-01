@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/security-scheme.schema.json",
+    "title": "Reporty Operation Security Scheme",
+    "description": "",
+    "type": "object",
+    "required": [
+        "type",
+        "scheme",
+        "name"
+    ],
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "apiKey",
+                "http",
+                "oauth2",
+                "openIdConnect",
+                "none"
+            ]
+        },
+        "scheme": {
+            "type": "string",
+            "enum": [
+                "basic",
+                "bearer",
+                "digest",
+                "oauth",
+                "privateToken",
+                "none"
+            ]
+        },
+        "in": {
+            "type": "string",
+            "enum": [
+                "header",
+                "cookie"
+            ]
+        },
+        "name": {
+            "type": "string"
+        }
+    }
+}
