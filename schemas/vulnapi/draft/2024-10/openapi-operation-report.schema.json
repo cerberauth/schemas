@@ -1,0 +1,35 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/openapi-operation-report.schema.json",
+    "title": "OpenAPI Operation Report",
+    "description": "",
+    "type": "object",
+    "required": [
+        "operationId",
+        "securitySchemes",
+        "issues"
+    ],
+    "properties": {
+        "operationId": {
+            "type": "string"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "securitySchemes": {
+            "type": "array",
+            "items": {
+                "$ref": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/security-scheme-report.schema.json"
+            }
+        },
+        "issues": {
+            "type": "array",
+            "items": {
+                "$ref": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/issue-report.schema.json"
+            }
+        }
+    }
+}
