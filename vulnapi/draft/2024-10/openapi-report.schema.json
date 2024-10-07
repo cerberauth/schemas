@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://refactor-report-schemas.cerberauth-schemas.pages.dev/vulnapi/draft/2024-10/openapi-report.schema.json",
+    "title": "OpenAPI Report",
+    "description": "",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "paths": {
+            "title": "Map<string, PathItem object>",
+            "type": "object",
+            "patternProperties": {
+                "^.*$": {
+                    "title": "Map<string, Operation object>",
+                    "type": "object",
+                    "patternProperties": {
+                        "^.*$": {
+                            "$ref": "https://refactor-report-schemas.cerberauth-schemas.pages.dev/vulnapi/draft/2024-10/openapi-operation-report.schema.json"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

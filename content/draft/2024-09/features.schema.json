@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://schemas.cerberauth.com/content/draft/2024-09/features.schema.json",
+    "$id": "https://refactor-report-schemas.cerberauth-schemas.pages.dev/content/draft/2024-09/features.schema.json",
     "title": "Features",
     "description": "",
     "type": "object",
@@ -15,7 +15,7 @@
         "featureList": {
             "type": "array",
             "items": {
-                "$ref": "https://schemas.cerberauth.com/content/draft/2024-09/feature.schema.json"
+                "$ref": "https://refactor-report-schemas.cerberauth-schemas.pages.dev/content/draft/2024-09/feature.schema.json"
             }
         }
     }

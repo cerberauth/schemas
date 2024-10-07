@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://schemas.cerberauth.com/content/draft/2024-09/image.schema.json",
+    "$id": "https://refactor-report-schemas.cerberauth-schemas.pages.dev/content/draft/2024-09/image.schema.json",
     "title": "Image",
     "description": "https://schema.org/ImageObject",
     "type": "object",

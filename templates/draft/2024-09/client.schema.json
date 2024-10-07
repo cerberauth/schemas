@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://schemas.cerberauth.com/templates/draft/2024-09/client.schema.json",
+    "$id": "https://refactor-report-schemas.cerberauth-schemas.pages.dev/templates/draft/2024-09/client.schema.json",
     "title": "Client Template",
     "description": "",
     "type": "object",
