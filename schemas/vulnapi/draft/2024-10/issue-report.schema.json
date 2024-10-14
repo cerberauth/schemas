@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/vulnerability.schema.json",
-    "title": "Vulnerability",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/issue-report.schema.json",
+    "title": "Issue",
     "description": "",
     "type": "object",
     "required": [

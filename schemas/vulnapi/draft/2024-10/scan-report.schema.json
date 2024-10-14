@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/scan.schema.json",
-    "title": "Report Scan",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/scan-report.schema.json",
+    "title": "Scan Report",
     "description": "",
     "type": "object",
     "required": [],

@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/security-scheme.schema.json",
-    "title": "Reporty Operation Security Scheme",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/security-scheme-report.schema.json",
+    "title": "Operation Security Scheme Report",
     "description": "",
     "type": "object",
     "required": [

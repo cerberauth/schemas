@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/graphql-report.schema.json",
+    "title": "GraphQL Report",
+    "description": "",
+    "type": "object",
+    "required": [
+        "url",
+        "queries",
+        "mutations"
+    ],
+    "properties": {
+        "url": {
+            "type": "string"
+        },
+        "queries": {
+            "type": "object"
+        },
+        "mutations": {
+            "type": "object"
+        }
+    }
+}
