@@ -13,29 +13,39 @@
         "type": {
             "type": "string",
             "enum": [
-                "apiKey",
                 "http",
                 "oauth2",
                 "openIdConnect",
+                "apiKey",
+                "mutualTLS",
                 "none"
             ]
         },
         "scheme": {
             "type": "string",
+            "description": "Value are registered in IANA Security Scheme Name Registry",
             "enum": [
-                "basic",
-                "bearer",
-                "digest",
-                "oauth",
-                "privateToken",
-                "none"
+                "Basic",
+                "Bearer",
+                "Digest",
+                "OAuth",
+                "PrivateToken",
+                "None"
             ]
         },
         "in": {
             "type": "string",
             "enum": [
+                "query",
                 "header",
                 "cookie"
+            ]
+        },
+        "token_format": {
+            "type": "string",
+            "enum": [
+                "jwt",
+                "none"
             ]
         },
         "name": {
