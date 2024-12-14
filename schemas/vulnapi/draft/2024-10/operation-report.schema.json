@@ -27,7 +27,7 @@
             "type": "string"
         },
         "body": {
-            "type": "object"
+            "type": "string"
         },
         "cookies": {
             "type": "array",
