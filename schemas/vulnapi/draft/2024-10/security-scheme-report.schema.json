@@ -41,7 +41,7 @@
                 "cookie"
             ]
         },
-        "token_format": {
+        "tokenFormat": {
             "type": "string",
             "enum": [
                 "jwt",

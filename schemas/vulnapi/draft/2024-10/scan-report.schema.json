@@ -4,15 +4,22 @@
     "title": "Scan Report",
     "description": "",
     "type": "object",
-    "required": [],
+    "required": ["id"],
     "properties": {
+        "id": {
+            "type": "string"
+        },
         "request": {
             "type": "object",
             "required": [
+                "id",
                 "method",
                 "url"
             ],
             "properties": {
+                "id": {
+                    "type": "string"
+                },
                 "method": {
                     "type": "string"
                 },
