@@ -7,7 +7,6 @@
     "required": [
         "id",
         "name",
-        "url",
         "cvss",
         "status"
     ],
@@ -60,6 +59,28 @@
                 "passed",
                 "failed"
             ]
+        },
+        "scans": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "status"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string",
+                        "enum": [
+                            "passed",
+                            "failed"
+                        ]
+                    }
+                }
+            }
         }
     }
 }
