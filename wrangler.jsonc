@@ -1,0 +1,17 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "name": "cerberauth-schemas",
+  "compatibility_date": "2025-05-11",
+  "assets": {
+    "directory": "./schemas",
+  },
+  "routes": [
+    {
+      "pattern": "schemas.cerberauth.com",
+      "custom_domain": true
+    }
+  ],
+}
