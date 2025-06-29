@@ -1,0 +1,59 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/report-options.schema.json",
+    "title": "Report Options",
+    "description": "",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "scansIncluded": {
+            "type": "array",
+            "description": "List of scans performed. If empty, all scans are included.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "scansExcluded": {
+            "type": "array",
+            "description": "List of scans which has not been performed. If empty, no scans are excluded.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "minSeverity": {
+            "type": "number",
+            "format": "float",
+            "minimum": 0,
+            "maximum": 10,
+            "description": "Minimum severity level to include in the report and during the scan."
+        },
+        "CWEsIncluded": {
+            "type": "array",
+            "description": "List of CWE IDs to include in the report. If empty, all CWEs are included.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "CWEsExcluded": {
+            "type": "array",
+            "description": "List of CWE IDs to exclude from the report. If empty, no CWEs are excluded.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "OWASPsIncluded": {
+            "type": "array",
+            "description": "List of OWASP vulnerabilities to include in the report. If empty, all OWASP Top 10 API vulnerabilities are included.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "OWASPsExcluded": {
+            "type": "array",
+            "description": "List of OWASP vulnerabilities to exclude from the report. If empty, no OWASP Top 10 API vulnerabilities are excluded.",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
