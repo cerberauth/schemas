@@ -19,7 +19,8 @@
                 "not_supported",
                 "deprecated",
                 "planned",
-                "partial"
+                "partial",
+                "unknown"
             ]
         },
         "category": {
