@@ -1,0 +1,3 @@
+[submodule ".reportx-src"]
+	path = .reportx-src
+	url = https://github.com/cerberauth/reportx.git
