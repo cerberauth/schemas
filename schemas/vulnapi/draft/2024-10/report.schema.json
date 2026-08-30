@@ -7,7 +7,7 @@
     "required": ["options", "reports"],
     "properties": {
         "options": {
-            "type": "object"
+            "$ref": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/report-options.schema.json"
         },
         "curl": {
             "$ref": "https://schemas.cerberauth.com/vulnapi/draft/2024-10/curl-report.schema.json"
